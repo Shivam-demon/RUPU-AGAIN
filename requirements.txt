@@ -1,4 +1,4 @@
-git+https://github.com/adityacheats/download@master
+git+https://github.com/opbrutal/dowlder@master
 pyrogram
 TgCrypto
 py-tgcalls==0.8.1rc1
