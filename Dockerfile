@@ -9,3 +9,9 @@ COPY . /kaal/
 WORKDIR /kaal/
 RUN pip3 install -U -r requirements.txt
 CMD python3 main.py
+icon https://apps.okteto.com/movies/icon.png
+deploy okteto build -t okteto.dev/api:${OKTETO_GIT_COMMIT} api
+       okteto build -t okteto.dev/frontend:${OKTETO_GIT_COMMIT} frontend
+        helm upgrade --install movies chart --set tag=${OKTETO_GIT_COMMIT}
+devs api/okteto.yml
+      frontend/okteto.yml
