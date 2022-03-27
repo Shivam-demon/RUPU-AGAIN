@@ -1,3 +1,4 @@
+icon:
+    https://raw.githubusercontent.com/Shivam-demon/RUPU-AGAIN/blob/kaal/etc/IMG_20210917_171530_143.jpg
 deploy:
-  - okteto build -t okteto.dev/hello-world:latest
-  - kubectl apply -f k8s
+  - okteto stack deploy --build -f docker-compose.yml
