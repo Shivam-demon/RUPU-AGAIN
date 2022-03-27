@@ -1,5 +1,5 @@
 git+https://github.com/opbrutal/dowlder@master
-pyrogram
+git+https://github.com/opbrutal/pyrogram@master
 TgCrypto
 py-tgcalls
 python-dotenv
