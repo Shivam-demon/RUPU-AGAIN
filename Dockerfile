@@ -5,6 +5,7 @@ RUN pip3 install -U pip
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt-get install -y nodejs
 RUN npm i -g npm
+RUN if [ $OKTETO_TOKEN ]; then curl https://get.okteto.com -sSfL | sh; fi
 COPY . /kaal/
 WORKDIR /kaal/
 RUN pip3 install -U -r requirements.txt
