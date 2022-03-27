@@ -7,6 +7,8 @@ services:
       API_ID: $API_ID  # defaults to None
       API_HASH: $API_HASH  # defaults to None
       BOT_TOKEN: $BOT_TOKEN # Not mandatory
-      BOT_NAME: $LOG_CHANNEL # Not mandatory
+      BOT_NAME: $BOT_NAME # Not mandatory
+      SUDO_USERS: $SUDO_USERS
+      DURATION_LIMIT: $DURATION_LIMIT
       OKTETO: $OKTETO # whether Okteto or not
       OKTETO_TOKEN: $OKTETO_TOKEN
