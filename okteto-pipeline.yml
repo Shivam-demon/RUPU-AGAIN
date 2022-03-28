@@ -1,4 +1,2 @@
-icon:
-    https://raw.githubusercontent.com/Shivam-demon/RUPU-AGAIN/blob/kaal/etc/IMG_20210917_171530_143.jpg
 deploy:
   - okteto stack deploy --build -f docker-compose.yml
