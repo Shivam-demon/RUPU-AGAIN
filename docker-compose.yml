@@ -10,5 +10,3 @@ services:
       BOT_NAME: $BOT_NAME # Not mandatory
       SUDO_USERS: $SUDO_USERS
       DURATION_LIMIT: $DURATION_LIMIT
-      OKTETO: $OKTETO # whether Okteto or not
-      OKTETO_TOKEN: $OKTETO_TOKEN
